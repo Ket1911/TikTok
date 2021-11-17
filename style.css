@@ -1,0 +1,338 @@
+html {
+    
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    z-index: 1000;
+
+    background-color: #fff;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-icon {
+    display: inline-block;
+    background-image: url(assets/svg/tiktok_logo.svg);
+    width: 50px;
+    height: 50px;
+}
+
+.logo p {
+    font-size: 2rem;
+    
+}
+
+.search-accounts {
+    margin: 0 10px;
+    width: 360px;
+    padding: 12px 16px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 92px;
+    border: none;
+}
+
+.trending-link {
+    display: block;
+    padding: 11px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;;
+
+    background-color: #000;
+    border-radius: 5px;
+    border: none;
+
+    transition: all .3s linear;
+    opacity: 1;
+   
+}
+
+.trending-link:hover {
+    cursor: pointer;
+    background-color: #303030;
+}
+
+.trending-link--disactive {
+    transition: all .3s linear;
+    opacity: 0;
+    
+}
+
+.content {
+    margin-top: 80px;
+}
+
+
+
+
+.post {
+    display: flex;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    
+
+    position: relative;
+}
+
+.post::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+
+    position: absolute;
+    bottom: -20px;
+}
+
+.post-photo {
+    width: 60px;
+    height: 56px;
+    border-radius: 50%;
+    
+}
+
+
+.post-photo:hover {
+    cursor: pointer;
+}
+
+.post-content {
+    margin-left: 10px;
+    width: 70%;
+    
+   
+}
+
+.post-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.post-name:hover {
+    cursor: pointer;
+}
+
+.post-text {
+    font-size: 1rem; 
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.post-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.post-video {
+    width: 270px;
+    height: auto;
+    
+}
+
+.post-icons {
+    margin-left: 20px;
+    width: 50px;
+    height: auto;
+   
+    
+}
+
+.post-likes {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-image: url(assets/svg/like-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ccc;
+    opacity: .8;
+
+}
+
+.post-comments {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-image: url(assets/svg/comments-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ccc;
+    opacity: .8;
+}
+
+.post-count {
+    margin: 5px 0 10px;
+    text-align: center;
+    font-size: .8rem;
+    
+}
+
+
+
+.profile-info {
+    display: flex;
+    margin: 100px auto 40px;
+    max-width: 650px;
+    height: auto;
+}
+
+.profile-photo {
+    margin-right: 20px;
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.profile-nickname {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.profile-count-info {
+    margin: 0 auto;
+    max-width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-count {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.profile-text {
+    margin: 0 20px 0 5px;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+}
+
+.video-container {
+    margin: 0 auto;
+    max-width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-wrapper {
+    margin: 3px 7px;
+    width: 31%;
+    position: relative;
+}
+
+.profile-video {
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+    z-index: 10;
+}
+
+.profile-views {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 700;
+    
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+
+    
+}
+@media screen and (max-width: 700px) {
+    .logo p {
+        display: none;
+    }
+
+    .search-accounts {
+        margin: 0 10px;
+        width: 360px;
+        padding: 6px 12px;
+        background-color: rgba(22, 24, 35, 0.06);
+    } 
+
+    .trending-link {
+        font-size: .8rem;
+    }
+} 
+
+@media screen and (max-width: 560px) {
+    .video-wrapper {
+        width: 100%;
+    }
+
+    .post-wrapper {
+        flex-direction: column;
+    }
+
+    .post-icons {
+        margin-top: 10px;
+        display: flex;
+        width: auto;
+    }
+
+    .post-count {
+        margin-right: 10px;
+    }
+
+    .post-photo {
+        display: none;
+    }
+} 
